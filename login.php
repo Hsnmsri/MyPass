@@ -1,9 +1,4 @@
-<?php
-    // Connect to database
-    include "./php/connectdb.php";
-
-    $loginData=mysqli_query($MyPassdbConnection,"SELECT FROM ")
-?>
+<?php include "./php/login.php" ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,18 +11,18 @@
 
 <body>
 
-    <form action="#" method="post">
-        
+    <form method="post">
+
         <h1>Login</h1>
 
         <label>UserName :</label>
-        <input type="text">
-        
+        <input type="text" name="username">
+
         <br><br>
-        
+
         <label>Password :</label>
-        <input type="password">
-        
+        <input type="password" name="password">
+
         <br><br>
 
         <button type="submit">Login</button>
