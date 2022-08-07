@@ -11,10 +11,10 @@
 <body>
 
     <h1>Setting</h1>
-    <button>Setting</button>
-    <button>Login History</button>
-    <button>Password List</button>
-    <button>Logout</button>
+    <button onclick="Redirector('setting.php')">Setting</button>
+    <button onclick="Redirector('loginhistory.php')">Login History</button>
+    <button  onclick="Redirector('passwordlist.php')">Password List</button>
+    <button  onclick="Redirector('index.php?user=logout')">Logout</button>
 
     <br><br>
     <br><br>
