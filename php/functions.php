@@ -14,19 +14,14 @@ function Js_Message($message)
 // create login history
 function set_login_history()
 {
-
-    // connet to databse
     include "connectdb.php";
-
     // set time zone
     date_default_timezone_set('Asia/Tehran');
-
     // login detail
     $login_time = date("G:i:s");
     $login_date = date("Y-m-d");
     $login_ip = $_SERVER['REMOTE_ADDR'];
     $login_detail = $_SERVER['HTTP_USER_AGENT'];
-
     // set in database
     $query = "INSERT INTO mypass_login_history (id, time, date, ip, detail) VALUES (NULL, '$login_time', '$login_date', '$login_ip', '$login_detail')";
     mysqli_query($MyPassdbConnection, $query);
