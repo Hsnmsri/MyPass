@@ -10,17 +10,14 @@
 </head>
 
 <body>
-
     <h1>Setting</h1>
     <button onclick="Redirector('index.php')">Home</button>
     <button onclick="Redirector('loginhistory.php')">Login History</button>
     <button onclick="Redirector('passwordlist.php')">Password List</button>
     <button onclick="Redirector('setting.php')">Refresh</button>
     <button onclick="Redirector('index.php?user=logout')">Logout</button>
-
     <br><br>
     <br><br>
-
     <hr>
     <div>
         <h3>Change UserName</h3>
@@ -53,11 +50,9 @@
         <button onclick="Change_Password()">Change Password</button>
         <br><br>
     </div>
-
     <!-- script -->
     <script src="js/functions.js"></script>
     <script src="js/setting.js"></script>
-
 </body>
 
 </html>

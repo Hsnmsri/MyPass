@@ -10,25 +10,16 @@
 </head>
 
 <body>
-
     <form method="post">
-
         <h1>Login</h1>
-
         <label>UserName :</label>
         <input type="text" name="username">
-
         <br><br>
-
         <label>Password :</label>
         <input type="password" name="password">
-
         <br><br>
-
         <button type="submit">Login</button>
-
     </form>
-
 </body>
 
 </html>

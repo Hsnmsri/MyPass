@@ -7,7 +7,6 @@ $login_history_data = mysqli_query($MyPassdbConnection, "SELECT * FROM mypass_lo
 $login_history_data_array = mysqli_fetch_all($login_history_data);
 ?>
 <table border="1">
-
     <thead>
         <tr>
             <td>id</td>
