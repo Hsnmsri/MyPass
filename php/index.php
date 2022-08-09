@@ -1,11 +1,9 @@
 <?php
 include "files_directory.php";
+include "functions.php";
 session_start();
 
-// check session login set
-if (!isset($_SESSION['user_status'])) {
-    header("Location: $dir_login");
-}
+Check_User_session();
 
 // logout
 if (isset($_GET['user']) && $_GET['user'] == 'logout') {

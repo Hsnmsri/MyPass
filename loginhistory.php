@@ -20,7 +20,7 @@
     <br><br>
     <br><br>
 
-    <?php include "./php/loginhistory.php" ?>
+    <?php include "./php/loginhistory.php"; ?>
 
     <!-- script -->
     <script src="js/functions.js"></script>
