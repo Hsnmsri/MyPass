@@ -1,4 +1,4 @@
-<?php include "php/setting.php" ?>
+<?php include "php/setting.php"; ?>
 <!DOCTYPE html>
 <html lang="en">
 

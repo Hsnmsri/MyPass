@@ -3,8 +3,6 @@
 include "functions.php";
 include "files_directory.php";
 
-session_start();
-
 // Connect to database
 include "connectdb.php";
 
