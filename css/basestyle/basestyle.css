@@ -1,0 +1,24 @@
+@import url(./reset.css);
+@import url(./font.css);
+@import url(./classes.css);
+@import url(./element.css);
+
+:root {
+    font-family: IranSansX;
+    font-size: 20px;
+}
+
+/* main card */
+.main {
+    display: flex;
+    justify-content: center;
+    border-radius: 8px;
+    margin: 0 auto;
+    width: 490px;
+    height: 600px;
+}
+
+.main-title {
+    font-weight: 700;
+    margin-top: 53px;
+}
