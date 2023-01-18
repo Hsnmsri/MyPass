@@ -1,4 +1,10 @@
-<?php include "./php/login.php" ?>
+<?php
+// require_once('config.php');
+if (isset($_POST['username']) && isset($_POST['password'])) {
+    
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 

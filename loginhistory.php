@@ -1,4 +1,3 @@
-<?php include "./php/loginhistory.php"; ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -21,7 +20,6 @@
     <br><br>
     <br><br>
 
-    <?php include "./php/loginhistory.php"; ?>
     <table border="1">
 
         <thead>

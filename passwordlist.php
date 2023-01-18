@@ -1,4 +1,3 @@
-<?php include "php/passwordlist.php"; ?>
 <!DOCTYPE html>
 <html lang="en">
 

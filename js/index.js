@@ -35,6 +35,9 @@ function HideInputsPassword() {
     passwordInput.value = null;
 }
 // Save Password
+/**
+ * Send request to database for save data
+ */
 function SavePassword() {
     let domainInput, usernameInput, passwordInput;
     domainInput = document.getElementById('domain-input');

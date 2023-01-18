@@ -1,4 +1,3 @@
-<?php include "php/index.php" ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,8 +13,8 @@
     <h1>My Pass</h1>
     <button onclick="Redirector('setting.php')">Setting</button>
     <button onclick="Redirector('loginhistory.php')">Login History</button>
-    <button  onclick="Redirector('passwordlist.php')">Password List</button>
-    <button  onclick="Redirector('index.php?user=logout')">Logout</button>
+    <button onclick="Redirector('passwordlist.php')">Password List</button>
+    <button onclick="Redirector('index.php?user=logout')">Logout</button>
 
     <br><br>
     <br><br>
@@ -29,7 +28,7 @@
     <input type="text" style="display: none;" id="username-input">
 
     <br><br>
-    
+
     <label>Password :</label>
     <input type="text" id="pass-in">
 
