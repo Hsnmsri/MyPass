@@ -1,4 +1,3 @@
-<?php include "./php/login.php" ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,35 +5,75 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="css/basestyle/basestyle.css">
-    <link rel="stylesheet" href="/css/login.css">
-
-    <title>Login | MyPass</title>
+    <link rel="stylesheet" href="css/login.css">
+    <title>Login</title>
 </head>
 
-<body>
-    
+<body dir="ltr">
+
+    <div id="main-frame">
+
+        <header>
+
+            <div id="header-left-box">
+
+                <h1>Login</h1>
+
+            </div>
+
+            <div id="header-right-box"></div>
+
+        </header>
+
+        <!-- Main Frame -->
+        <main>
+
+            <form id="login-form" method="post">
+
+                <div id="username-input-box" class="input-main-box">
+
+                    <label for="username-input" class="input-label">Username</label>
+                    <input type="text" name="username" id="username-input" class="login-input">
+                    <span class="input-info-detail">
+                        We’ll never share your username with anyone else
+                    </span>
+
+                </div>
+
+                <div id="password-input-box" class="input-main-box">
+
+                    <label for="password-input" class="input-label">Password</label>
+                    <input type="password" name="password" id="password-input" class="login-input">
+
+                </div>
+
+                <div id="saveinfo-check-box">
+
+                    <input type="checkbox" id="save-info-check">
+                    <label for="save-info-check" id="save-info-check-label">Save my login information</label>
+
+                </div>
+
+                <button type="submit" id="submit-button">Login</button>
+
+            </form>
+
+        </main>
+
+        <footer>
+
+            <span id="copyright-text">
+                All rights reserved by Mr. Mansouri
+            </span>
+
+            <span id="rule-text">
+                Privacy and Rules
+            </span>
+
+        </footer>
+
+    </div>
+
 </body>
-    <img src="img/BG.png" alt="skybackground" class="back-ground">
-
-    <form method="post" class="main bgcolor-0D1321">
-
-        <h1 class="main-title color-fff">Login</h1>
-        
-        <div>
-        <label>UserName</label>
-        <input type="text" name="username">
-        </div>
-
-        <div>
-        <label>Password</label>
-        <input type="password" name="password">
-        </div>
-
-        <button type="submit">Login</button>
-
-    </form>
-</body> -->
 
 </html>
