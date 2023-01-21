@@ -1,1 +1,88 @@
 @import url(base/frame.css);
+
+@media screen {
+
+    /* Main */
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .input-main-box {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 28px;
+        width: 271px;
+    }
+
+    .input-label {
+        font-size: 0.8rem;
+    }
+
+    .input-data {
+        margin: 6.7px 0;
+    }
+
+    #button-box {
+        display: flex;
+        align-items: center;
+        width: 271px;
+    }
+
+    /* Password input */
+    #generate-password-button {
+        color: var(--Palette4);
+        background-color: var(--Palette1);
+        align-self: flex-end;
+        margin-top: 28px;
+    }
+
+    #cancel-button {
+        color: var(--Palette4);
+        background-color: var(--Palette1);
+    }
+
+}
+
+@media (min-width: 992px) {
+
+    /* App menu */
+    #menu-box {
+        position: fixed;
+        transform: translate(-1vw, -56vh);
+    }
+
+    /* Main */
+    main {
+        box-sizing: border-box;
+        padding: 39px 42px;
+        align-items: flex-start;
+    }
+
+    #button-box {
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    #save-pass-button {
+        margin-left: auto;
+    }
+
+    /* Password input */
+    #password-input-box {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    #password-input-box>label {
+        width: 100%;
+    }
+
+    #generate-password-button {
+        align-self: center;
+        margin: 0 0 0 22.5px;
+    }
+}

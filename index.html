@@ -17,16 +17,42 @@
 
             <div id="header-left-box">
 
-                <h1>PageTitle</h1>
+                <h1>MyPass</h1>
 
             </div>
 
             <div id="header-right-box">
 
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" id="app-home-icon">
-                    <path
-                        d="M576 247.1c0-6.802-2.877-13.56-8.471-18.31l-263.1-224c-4.484-3.781-10.01-5.669-15.53-5.669S276.1 1.891 272.5 5.672L8.471 229.7C2.877 234.4 0 241.2 0 247.1C0 264.1 13.83 271.1 24.02 271.1c5.479 0 10.99-1.867 15.51-5.687l24.47-20.76v226.5C64 494.1 81.94 512 104 512h95.1c22.06 0 39.1-17.94 39.1-40l.0056-120h95.1l-.0032 120C335.1 494.1 353.9 512 375.1 512h95.1c22.06 0 39.1-17.94 39.1-40V245.5L536.5 266.3c4.516 3.813 10.03 5.688 15.52 5.688C562.1 271.1 576 263.1 576 247.1zM463.1 463.1H383.1v-120c0-22.06-17.94-40-39.1-40H232c-22.06 0-39.1 17.94-39.1 40v120H112V207.1c0-.9629-.4375-1.783-.5488-2.717L288 55.45l175.1 149.4V463.1z" />
-                </svg>
+                <!-- Menu box -->
+                <div id="menu-background-box"></div>
+                <div id="menu-box">
+
+                    <!-- Menu Main Button box -->
+                    <div id="menu-main-box">
+
+                        <!-- Items -->
+                        <div class="menu-button-item">
+
+                            <span class="menu-button-text">Login history</span>
+
+                        </div>
+                        <hr>
+                        <div class="menu-button-item">
+
+                            <span class="menu-button-text">Setting</span>
+
+                        </div>
+
+                    </div>
+
+                    <div id="menu-cancel-box">
+
+                        <span id="cancel-button-text">Cancel</span>
+
+                    </div>
+
+                </div>
+
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" id="app-close-icon">
                     <path
                         d="M378.4 440.6c8.531 10.16 7.203 25.28-2.938 33.81C370.9 478.2 365.5 480 360 480c-6.844 0-13.64-2.906-18.39-8.562L192 293.3l-149.6 178.1C37.63 477.1 30.83 480 23.98 480c-5.453 0-10.92-1.844-15.42-5.625c-10.14-8.531-11.47-23.66-2.938-33.81L160.7 256L5.625 71.44C-2.906 61.28-1.578 46.16 8.563 37.63C18.69 29.08 33.84 30.39 42.38 40.56L192 218.7l149.6-178.1c8.547-10.17 23.67-11.47 33.81-2.938s11.47 23.66 2.938 33.81L223.3 256L378.4 440.6z" />
@@ -42,41 +68,43 @@
 
             </div>
 
-            <!-- Menu box -->
-            <div id="menu-background-box"></div>
-            <div id="menu-box">
+        </header>
 
-                <!-- Menu Main Button box -->
-                <div id="menu-main-box">
+        <!-- Main Frame -->
+        <main>
 
-                    <!-- Items -->
-                    <div class="menu-button-item">
+            <div id="domain-name-input-box" class="input-main-box">
 
-                        <span class="menu-button-text">Item1</span>
+                <label for="domain-name-input" class="input-label">Domain</label>
+                <input type="text" id="domain-name-input" class="input-data">
 
-                    </div>
-                    <hr>
-                    <div class="menu-button-item">
+            </div>
 
-                        <span class="menu-button-text">Item2</span>
+            <div id="username-input-box" class="input-main-box">
 
-                    </div>
+                <label for="username-input" class="input-label">Username</label>
+                <input type="text" id="username-input" class="input-data">
 
-                </div>
+            </div>
 
-                <div id="menu-cancel-box">
+            <div id="password-input-box" class="input-main-box">
 
-                    <span id="cancel-button-text">Cancel</span>
+                <label for="password-input" class="input-label">Password</label>
+                <input type="text" id="password-input" class="input-data">
+                <button id="generate-password-button">Generate</button>
 
-                </div>
+            </div>
+
+            <div id="button-box">
+
+                <button id="add-button">Add</button>
+                <button id="cancel-button">Cancel</button>
+                <button id="save-pass-button">Save Password</button>
 
             </div>
 
 
-        </header>
-
-        <!-- Main Frame -->
-        <main></main>
+        </main>
 
         <footer>
 
