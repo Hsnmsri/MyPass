@@ -1,0 +1,34 @@
+@import url(base/frame.css);
+
+@media screen {
+
+    /* setting frame */
+    #setting-frame {
+        display: flex;
+        flex-direction: column;
+        padding-top: 45px;
+    }
+
+    .frame-link {
+        font-size: 0.8rem;
+        text-decoration: solid underline;
+        margin-bottom: 22px;
+    }
+}
+
+@media (min-width: 992px) {
+    /* Menu */
+    #menu-box{
+        transform: translate(15vw,-59vh);
+    }
+
+    /* setting frame */
+    #setting-frame {
+        padding: 42px 42px;
+        height: 462px;
+    }
+
+    .frame-link {
+        cursor: pointer;
+    }
+}
