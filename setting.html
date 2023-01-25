@@ -76,7 +76,7 @@
         </header>
 
         <!-- Main Frame -->
-        <main id="setting-frame">
+        <main id="setting-frame" style="display: none;">
 
             <span class="frame-link">Change Username</span>
             <span class="frame-link">Change Password</span>
@@ -84,10 +84,70 @@
         </main>
 
         <!-- change Username frame -->
-        <main id="change-username-frame" style="display: none;"></main>
+        <main id="change-username-frame"style="display: none;">
+
+            <div class="input-box">
+
+                <label for="ch-username-input">Last Username</label>
+                <input type="text" id="ch-username-input">
+
+            </div>
+
+            <div class="input-box">
+
+                <label for="ch-new-username-input">Username</label>
+                <input type="text" id="ch-new-username-input">
+
+            </div>
+
+            <div class="input-box">
+
+                <label for="ch-renew-username-input">re-type Username</label>
+                <input type="text" id="ch-renew-username-input">
+
+            </div>
+
+            <div class="change-button-box">
+
+                <button id="cancel-username-button">Cancel</button>
+                <button id="change-user-name-button">Change Username</button>
+
+            </div>
+
+        </main>
 
         <!-- change Password frame -->
-        <main id="change-password-frame" style="display: none;"></main>
+        <main id="change-password-frame">
+
+            <div class="input-box">
+
+                <label for="ch-password-input">Last Password</label>
+                <input type="text" id="ch-password-input">
+
+            </div>
+
+            <div class="input-box">
+
+                <label for="ch-new-password-input">Password</label>
+                <input type="text" id="ch-new-password-input">
+
+            </div>
+
+            <div class="input-box">
+
+                <label for="ch-password-input">re-type Password</label>
+                <input type="text" id="ch-renew-password-input">
+
+            </div>
+
+            <div class="change-button-box">
+
+                <button id="cancel-password-button">Cancel</button>
+                <button id="change-password-button">Change Password</button>
+
+            </div>
+
+        </main>
 
         <footer>
 

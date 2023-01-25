@@ -14,12 +14,57 @@
         text-decoration: solid underline;
         margin-bottom: 22px;
     }
+
+    /* Change username and password styles */
+    #change-username-frame {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #change-password-frame {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .input-box {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 28px;
+        width: 271px;
+    }
+
+    .input-box>label {
+        font-size: 0.8rem;
+    }
+
+    .input-box>input {
+        margin-top: 6.7px;
+    }
+
+    .change-button-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 271px;
+    }
+
+    #cancel-username-button,
+    #cancel-password-button {
+        color: var(--Palette4);
+        background-color: var(--Palette1);
+    }
+
 }
 
 @media (min-width: 992px) {
+
     /* Menu */
-    #menu-box{
-        transform: translate(15vw,-59vh);
+    #menu-box {
+        transform: translate(15vw, -59vh);
     }
 
     /* setting frame */
@@ -31,4 +76,25 @@
     .frame-link {
         cursor: pointer;
     }
+
+    /* Change username and password styles */
+    #change-username-frame {
+        justify-content: unset;
+        align-items: flex-start;
+        padding: 39px 42px;
+    }
+
+    #change-password-frame {
+        justify-content: unsafe;
+        align-items: flex-start;
+        box-sizing: border-box;
+        padding: 39px 42px;
+    }
+
+    .change-button-box {
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
 }
