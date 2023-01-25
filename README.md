@@ -1,14 +1,19 @@
 # MyPass
 
-## Functions
-
-### Java script :
-
-#### functions.js
-> Redirector() : redirect pages <br/>
-> PasswrodGenerator() : generate password <br/>
-
-#### index.js
-> ShowInputsPassword() : show inputs in index.php for save password <br/>
-> HideInputsPassword() : hide inputs in index.php <br/>
-> SavePassword() : Save passwrod to database with ajax (/php/save_passwrod.php) <br/>
+## Directory
+|-css
+    |-base
+        |-elements.css
+        |-frame.css
+        |-reset.css
+    |-index.css
+    |-login.css
+    |-loginhistory.css
+    |-passwordlist.css
+    |-setting.css
+|-frame.html
+|-index.html
+|-login.html
+|-loginhistory.html
+|-passwordlist.html
+|-setting.html
