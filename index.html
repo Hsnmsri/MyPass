@@ -24,34 +24,39 @@
             <div id="header-right-box">
 
                 <!-- Menu box -->
-                <div id="menu-background-box"></div>
-                <div id="menu-box">
+                <div id="menu-container-box" style="display: none;">
 
-                    <!-- Menu Main Button box -->
-                    <div id="menu-main-box">
+                    <div id="menu-background-box"></div>
+                    <div id="menu-box">
 
-                        <!-- Items -->
-                        <div class="menu-button-item">
+                        <!-- Menu Main Button box -->
+                        <div id="menu-main-box">
 
-                            <span class="menu-button-text">Login history</span>
+                            <!-- Items -->
+                            <div class="menu-button-item">
+
+                                <span class="menu-button-text">Login history</span>
+
+                            </div>
+                            <hr>
+                            <div class="menu-button-item">
+
+                                <span class="menu-button-text">Setting</span>
+
+                            </div>
 
                         </div>
-                        <hr>
-                        <div class="menu-button-item">
 
-                            <span class="menu-button-text">Setting</span>
+                        <div id="menu-cancel-box">
+
+                            <span id="cancel-button-text">Cancel</span>
 
                         </div>
-
-                    </div>
-
-                    <div id="menu-cancel-box">
-
-                        <span id="cancel-button-text">Cancel</span>
 
                     </div>
 
                 </div>
+
 
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" id="app-close-icon">
                     <path
@@ -73,14 +78,14 @@
         <!-- Main Frame -->
         <main>
 
-            <div id="domain-name-input-box" class="input-main-box">
+            <div id="domain-name-input-box" class="input-main-box" style="display: none;">
 
                 <label for="domain-name-input" class="input-label">Domain</label>
                 <input type="text" id="domain-name-input" class="input-data">
 
             </div>
 
-            <div id="username-input-box" class="input-main-box">
+            <div id="username-input-box" class="input-main-box" style="display: none;">
 
                 <label for="username-input" class="input-label">Username</label>
                 <input type="text" id="username-input" class="input-data">
@@ -98,8 +103,8 @@
             <div id="button-box">
 
                 <button id="add-button">Add</button>
-                <button id="cancel-button">Cancel</button>
-                <button id="save-pass-button">Save Password</button>
+                <button id="cancel-button" style="display: none;">Cancel</button>
+                <button id="save-pass-button" style="display: none;">Save Password</button>
 
             </div>
 
@@ -117,6 +122,11 @@
             </span>
 
         </footer>
+
+        <!-- scripts -->
+        <script src="js/jquery-3.6.1.min.js"></script>
+        <script src="js/global.js"></script>
+        <script src="js/index.js"></script>
 
     </div>
 
