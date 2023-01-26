@@ -43,35 +43,38 @@
             </div>
 
             <!-- Menu box -->
-            <div id="menu-background-box"></div>
-            <div id="menu-box">
+            <div id="menu-container-box" style="display: none;">
 
-                <!-- Menu Main Button box -->
-                <div id="menu-main-box">
+                <div id="menu-background-box"></div>
+                <div id="menu-box">
 
-                    <!-- Items -->
-                    <div class="menu-button-item">
+                    <!-- Menu Main Button box -->
+                    <div id="menu-main-box">
 
-                        <span class="menu-button-text">Login History</span>
+                        <!-- Items -->
+                        <div class="menu-button-item">
+
+                            <span class="menu-button-text">Login history</span>
+
+                        </div>
+                        <hr>
+                        <div class="menu-button-item">
+
+                            <span class="menu-button-text">Setting</span>
+
+                        </div>
 
                     </div>
-                    <hr>
-                    <div class="menu-button-item">
 
-                        <span class="menu-button-text">Setting</span>
+                    <div id="menu-cancel-box">
+
+                        <span id="cancel-button-text">Cancel</span>
 
                     </div>
-
-                </div>
-
-                <div id="menu-cancel-box">
-
-                    <span id="cancel-button-text">Cancel</span>
 
                 </div>
 
             </div>
-
 
         </header>
 
@@ -84,7 +87,7 @@
         </main>
 
         <!-- change Username frame -->
-        <main id="change-username-frame"style="display: none;">
+        <main id="change-username-frame" style="display: none;">
 
             <div class="input-box">
 
@@ -162,6 +165,9 @@
         </footer>
 
     </div>
+
+    <!-- Scripts -->
+    <script src="js/global.js"></script>
 
 </body>
 
