@@ -79,10 +79,10 @@
         </header>
 
         <!-- Main Frame -->
-        <main id="setting-frame" style="display: none;">
+        <main id="setting-frame">
 
-            <span class="frame-link">Change Username</span>
-            <span class="frame-link">Change Password</span>
+            <span class="frame-link" id="change-username-btn">Change Username</span>
+            <span class="frame-link" id="change-password-btn">Change Password</span>
 
         </main>
 
@@ -120,7 +120,7 @@
         </main>
 
         <!-- change Password frame -->
-        <main id="change-password-frame">
+        <main id="change-password-frame" style="display: none;">
 
             <div class="input-box">
 
@@ -167,7 +167,9 @@
     </div>
 
     <!-- Scripts -->
+    <script src="js/jquery-3.6.1.min.js"></script>
     <script src="js/global.js"></script>
+    <script src="js/setting.js"></script>
 
 </body>
 
