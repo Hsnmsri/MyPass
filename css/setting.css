@@ -62,11 +62,6 @@
 
 @media (min-width: 992px) {
 
-    /* Menu */
-    #menu-box {
-        transform: translate(15vw, -59vh);
-    }
-
     /* setting frame */
     #setting-frame {
         padding: 42px 42px;

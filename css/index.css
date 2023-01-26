@@ -56,11 +56,6 @@
 
 @media (min-width: 992px) {
 
-    /* App menu */
-    #menu-box {
-        position: fixed;
-        transform: translate(-1vw, -56vh);
-    }
 
     /* Main */
     main {
