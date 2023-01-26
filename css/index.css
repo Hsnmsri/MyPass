@@ -39,6 +39,14 @@
         margin-top: 28px;
     }
 
+    #add-button {
+        width: 100%;
+    }
+
+    #save-pass-button {
+        margin-left: auto;
+    }
+
     #cancel-button {
         color: var(--Palette4);
         background-color: var(--Palette1);
@@ -66,8 +74,8 @@
         width: 100%;
     }
 
-    #save-pass-button {
-        margin-left: auto;
+    #add-button {
+        width: auto;
     }
 
     /* Password input */

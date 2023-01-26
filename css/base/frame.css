@@ -110,6 +110,7 @@
         top: 0;
         width: 100vw;
         height: 100vh;
+        animation: MenuBackBox 90ms;
         z-index: 1000;
     }
 
@@ -121,8 +122,10 @@
         bottom: 43px;
         left: 7.18%;
         width: 85.64%;
+        animation: MenuBoxAnim 90ms;
         z-index: 1001;
     }
+
 
     #menu-main-box {
         display: flex;
@@ -166,6 +169,27 @@
         margin-top: 24px;
         width: 100%;
         height: 58px;
+    }
+
+    /* Animations */
+    @keyframes MenuBoxAnim {
+        from {
+            transform: translateY(35px);
+        }
+
+        to {
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes MenuBackBox {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 0.47;
+        }
     }
 }
 
@@ -229,11 +253,11 @@
     }
 
     /* Menu box */
-
     #menu-box {
         top: unset;
         left: unset;
         position: absolute;
+        animation: none;
         width: auto;
         height: auto;
     }
