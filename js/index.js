@@ -1,4 +1,4 @@
-// Password Generate function
+// #region Password Generate function
 let PasswrodGenerator = function () {
     let chars = "0123456789abcdefghijklmnopqrstuvwxyz!@#$%^&*()ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     let password = "";
@@ -8,7 +8,9 @@ let PasswrodGenerator = function () {
     }
     return password;
 };
+//#endregion
 
+//#region Buttons event
 $('#generate-password-button').click(function () {
     $('#password-input').val(PasswrodGenerator);
 });
@@ -43,3 +45,4 @@ $('#copy-password-button').click(function () {
         checkCopyIcon.style.display = 'none';
     }, 760);
 });
+//#endregion
