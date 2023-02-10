@@ -17,3 +17,4 @@
 - loginhistory.html
 - passwordlist.html
 - setting.html
+- MyPass.png
