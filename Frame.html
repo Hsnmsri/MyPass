@@ -32,30 +32,34 @@
             </div>
 
             <!-- Menu box -->
-            <div id="menu-background-box"></div>
-            <div id="menu-box">
+            <div id="menu-container-box" style="display: none;">
 
-                <!-- Menu Main Button box -->
-                <div id="menu-main-box">
+                <div id="menu-background-box"></div>
+                <div id="menu-box">
 
-                    <!-- Items -->
-                    <div class="menu-button-item">
+                    <!-- Menu Main Button box -->
+                    <div id="menu-main-box">
 
-                        <span class="menu-button-text">Item1</span>
+                        <!-- Items -->
+                        <div class="menu-button-item" onclick="SetLink(this,'loginhistory')">
+
+                            <span class="menu-button-text">Login history</span>
+
+                        </div>
+                        <hr>
+                        <div class="menu-button-item" onclick="SetLink(this,'setting')">
+
+                            <span class="menu-button-text">Setting</span>
+
+                        </div>
 
                     </div>
-                    <hr>
-                    <div class="menu-button-item">
 
-                        <span class="menu-button-text">Item2</span>
+                    <div id="menu-cancel-box">
+
+                        <span id="cancel-button-text">Cancel</span>
 
                     </div>
-
-                </div>
-
-                <div id="menu-cancel-box">
-
-                    <span id="cancel-button-text">Cancel</span>
 
                 </div>
 
