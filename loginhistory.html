@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="MyPass.png"/>
+    <link rel="stylesheet" href="css/loginhistory.css">
+    <title>Login History</title>
+</head>
+
+<body dir="ltr">
+
+    <div id="main-frame">
+
+        <header>
+
+            <div id="header-left-box">
+
+                <h1>Login History</h1>
+
+            </div>
+
+            <div id="header-right-box">
+
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" id="app-home-icon">
+                    <path
+                        d="M576 247.1c0-6.802-2.877-13.56-8.471-18.31l-263.1-224c-4.484-3.781-10.01-5.669-15.53-5.669S276.1 1.891 272.5 5.672L8.471 229.7C2.877 234.4 0 241.2 0 247.1C0 264.1 13.83 271.1 24.02 271.1c5.479 0 10.99-1.867 15.51-5.687l24.47-20.76v226.5C64 494.1 81.94 512 104 512h95.1c22.06 0 39.1-17.94 39.1-40l.0056-120h95.1l-.0032 120C335.1 494.1 353.9 512 375.1 512h95.1c22.06 0 39.1-17.94 39.1-40V245.5L536.5 266.3c4.516 3.813 10.03 5.688 15.52 5.688C562.1 271.1 576 263.1 576 247.1zM463.1 463.1H383.1v-120c0-22.06-17.94-40-39.1-40H232c-22.06 0-39.1 17.94-39.1 40v120H112V207.1c0-.9629-.4375-1.783-.5488-2.717L288 55.45l175.1 149.4V463.1z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" id="app-close-icon">
+                    <path
+                        d="M378.4 440.6c8.531 10.16 7.203 25.28-2.938 33.81C370.9 478.2 365.5 480 360 480c-6.844 0-13.64-2.906-18.39-8.562L192 293.3l-149.6 178.1C37.63 477.1 30.83 480 23.98 480c-5.453 0-10.92-1.844-15.42-5.625c-10.14-8.531-11.47-23.66-2.938-33.81L160.7 256L5.625 71.44C-2.906 61.28-1.578 46.16 8.563 37.63C18.69 29.08 33.84 30.39 42.38 40.56L192 218.7l149.6-178.1c8.547-10.17 23.67-11.47 33.81-2.938s11.47 23.66 2.938 33.81L223.3 256L378.4 440.6z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 512" id="app-menu-icon">
+                    <path
+                        d="M64 112c26.5 0 48-21.5 48-48S90.5 16 64 16S16 37.5 16 64S37.5 112 64 112zM64 400c-26.5 0-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48S90.5 400 64 400zM64 208C37.5 208 16 229.5 16 256S37.5 304 64 304s48-21.5 48-48S90.5 208 64 208z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="password-list-icon">
+                    <path
+                        d="M328.5 0C227.3 0 145 82.31 145 183.5c0 10.12 .9062 20.44 2.719 30.81l-132.2 132.2C5.5 356.5 0 369.8 0 384v89.5C0 494.7 17.28 512 38.5 512h87C146.7 512 164 494.7 164 473.5V454h19.5c21.22 0 38.5-17.28 38.5-38.5V396h28c10.28 0 19.94-4 27.22-11.28l20.47-20.44C411.9 384.3 512 294.8 512 183.5C512 82.31 429.7 0 328.5 0zM295.7 314.8L282.5 311.5L246.1 348H173.1v58H116V464H48V384c0-1.312 .5313-2.594 1.469-3.531l151-151L197.2 216.3C194.4 205.2 193 194.1 193 183.5C193 108.8 253.8 48 328.5 48S464 108.8 464 183.5C464 268.8 385.1 337.1 295.7 314.8zM368 111.1c-17.67 0-32 14.33-32 32c0 17.67 14.33 32 32 32s32-14.33 32-32C400 126.3 385.7 111.1 368 111.1z" />
+                </svg>
+
+            </div>
+
+            <!-- Menu box -->
+            <div id="menu-container-box" style="display: none;">
+
+                <div id="menu-background-box"></div>
+                <div id="menu-box">
+
+                    <!-- Menu Main Button box -->
+                    <div id="menu-main-box">
+
+                        <!-- Items -->
+                        <div class="menu-button-item" onclick="SetLink(this,'loginhistory')">
+
+                            <span class="menu-button-text">Login history</span>
+
+                        </div>
+                        <hr>
+                        <div class="menu-button-item" onclick="SetLink(this,'setting')">
+
+                            <span class="menu-button-text">Setting</span>
+
+                        </div>
+
+                    </div>
+
+                    <div id="menu-cancel-box">
+
+                        <span id="cancel-button-text">Cancel</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </header>
+
+        <!-- Main Frame -->
+        <main>
+
+            <div id="table-container">
+
+                <!-- History table -->
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <td>ID</td>
+                            <td>Date</td>
+                            <td>Time</td>
+                            <td>Device</td>
+                            <td>IP</td>
+                            <td>Location</td>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+
+                            <td>1</td>
+                            <td>12-2-1401</td>
+                            <td>12:12:12</td>
+                            <td>IPhone 14 Pro Max</td>
+                            <td>182.159.124.122</td>
+                            <td>Iran</td>
+
+                        </tr>
+                        <tr>
+
+                            <td>1</td>
+                            <td>12-2-1401</td>
+                            <td>12:12:12</td>
+                            <td>IPhone 14 Pro Max</td>
+                            <td>182.159.124.122</td>
+                            <td>Iran</td>
+
+                        </tr>
+                        <tr>
+
+                            <td>1</td>
+                            <td>12-2-1401</td>
+                            <td>12:12:12</td>
+                            <td>IPhone 14 Pro Max</td>
+                            <td>182.159.124.122</td>
+                            <td>Iran</td>
+
+                        </tr>
+                        <tr>
+
+                            <td>1</td>
+                            <td>12-2-1401</td>
+                            <td>12:12:12</td>
+                            <td>IPhone 14 Pro Max</td>
+                            <td>182.159.124.122</td>
+                            <td>Iran</td>
+
+                        </tr>
+                        <tr>
+
+                            <td>1</td>
+                            <td>12-2-1401</td>
+                            <td>12:12:12</td>
+                            <td>IPhone 14 Pro Max</td>
+                            <td>182.159.124.122</td>
+                            <td>Iran</td>
+
+                        </tr>
+                        <tr>
+
+                            <td>1</td>
+                            <td>12-2-1401</td>
+                            <td>12:12:12</td>
+                            <td>IPhone 14 Pro Max</td>
+                            <td>182.159.124.122</td>
+                            <td>Iran</td>
+
+                        </tr>
+                        <tr>
+
+                            <td>1</td>
+                            <td>12-2-1401</td>
+                            <td>12:12:12</td>
+                            <td>IPhone 14 Pro Max</td>
+                            <td>182.159.124.122</td>
+                            <td>Iran</td>
+
+                        </tr>
+                        <tr>
+
+                            <td>1</td>
+                            <td>12-2-1401</td>
+                            <td>12:12:12</td>
+                            <td>IPhone 14 Pro Max</td>
+                            <td>182.159.124.122</td>
+                            <td>Iran</td>
+
+                        </tr>
+                        <tr>
+
+                            <td>1</td>
+                            <td>12-2-1401</td>
+                            <td>12:12:12</td>
+                            <td>IPhone 14 Pro Max</td>
+                            <td>182.159.124.122</td>
+                            <td>Iran</td>
+
+                        </tr>
+                        <tr>
+
+                            <td>1</td>
+                            <td>12-2-1401</td>
+                            <td>12:12:12</td>
+                            <td>IPhone 14 Pro Max</td>
+                            <td>182.159.124.122</td>
+                            <td>Iran</td>
+
+                        </tr>
+                        <tr>
+
+                            <td>1</td>
+                            <td>12-2-1401</td>
+                            <td>12:12:12</td>
+                            <td>IPhone 14 Pro Max</td>
+                            <td>182.159.124.122</td>
+                            <td>Iran</td>
+
+                        </tr>
+                        <tr>
+
+                            <td>1</td>
+                            <td>12-2-1401</td>
+                            <td>12:12:12</td>
+                            <td>IPhone 14 Pro Max</td>
+                            <td>182.159.124.122</td>
+                            <td>Iran</td>
+
+                        </tr>
+                        <tr>
+
+                            <td>1</td>
+                            <td>12-2-1401</td>
+                            <td>12:12:12</td>
+                            <td>IPhone 14 Pro Max</td>
+                            <td>182.159.124.122</td>
+                            <td>Iran</td>
+
+                        </tr>
+                        <tr>
+
+                            <td>1</td>
+                            <td>12-2-1401</td>
+                            <td>12:12:12</td>
+                            <td>IPhone 14 Pro Max</td>
+                            <td>182.159.124.122</td>
+                            <td>Iran</td>
+
+                        </tr>
+                        <tr>
+
+                            <td>1</td>
+                            <td>12-2-1401</td>
+                            <td>12:12:12</td>
+                            <td>IPhone 14 Pro Max</td>
+                            <td>182.159.124.122</td>
+                            <td>Iran</td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </main>
+
+        <footer>
+
+            <span id="copyright-text">
+                All rights reserved by Mr. Mansouri
+            </span>
+
+            <span id="rule-text">
+                Privacy and Rules
+            </span>
+
+        </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/global.js"></script>
+
+</body>
+
+</html>

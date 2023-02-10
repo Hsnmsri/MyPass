@@ -1,0 +1,120 @@
+@import url(base/frame.css);
+
+@media screen {
+
+    /* Main */
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .input-main-box {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 28px;
+        width: 271px;
+    }
+
+    .input-label {
+        font-size: 0.8rem;
+    }
+
+    .input-data {
+        margin: 6.7px 0;
+    }
+
+    #button-box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 271px;
+    }
+
+    /* Password input */
+    #password-input-box>div:first-child {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #password-input-box>div:last-child {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-top: 28px;
+        width: 100%;
+    }
+
+    #generate-password-button,
+    #cancel-button {
+        color: var(--Palette4);
+        background-color: var(--Palette1);
+    }
+
+    #copy-password-button {
+        color: var(--Palette4);
+        background-color: var(--Palette1);
+        margin-right: 17px;
+        width: 46px;
+        height: 36px;
+    }
+
+    #copy-password-check-icon {
+        display: none;
+    }
+
+    #add-button {
+        width: 100%;
+    }
+
+}
+
+@media (min-width: 992px) {
+
+
+    /* Main */
+    main {
+        box-sizing: border-box;
+        padding: 39px 42px;
+        align-items: flex-start;
+    }
+
+    #button-box {
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    #add-button {
+        width: auto;
+    }
+
+    /* Password input */
+    #password-input-box {
+        flex-direction: row;
+        width: 100%;
+    }
+
+    #password-input-box>div:first-child {
+        display: flex;
+        flex-direction: column;
+        width: 208px;
+    }
+
+    #password-input-box>div:last-child {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-top: 0;
+        box-sizing: border-box;
+        padding-top: 16px;
+    }
+
+    #password-input {
+        width: 208px;
+    }
+
+    #password-input-box>label {
+        width: 100%;
+    }
+}

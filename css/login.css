@@ -1,0 +1,72 @@
+@import url(base/frame.css);
+
+@media screen {
+
+    /* Main */
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #login-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Input box */
+    .input-main-box {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 28px;
+        width: 271px;
+    }
+
+    .input-label {
+        font-size: 0.8rem;
+    }
+
+    .login-input {
+        margin: 6.7px 0 3.3px 0;
+        width: 100%;
+    }
+
+    .input-info-detail {
+        font-size: 0.6rem;
+    }
+
+    #saveinfo-check-box {
+        display: flex;
+        align-items: center;
+        width: 271px;
+    }
+
+    #save-info-check-label {
+        font-size: 0.8rem;
+        margin-left: 5px;
+    }
+
+    #submit-button {
+        margin-top: 19px;
+    }
+}
+
+@media (min-width: 992px) {
+
+    /* Main */
+    main {
+        align-items: flex-start;
+    }
+
+    #login-form {
+        align-items: flex-start;
+        margin: 53px 0;
+        box-sizing: border-box;
+        padding: 0 17px;
+    }
+}

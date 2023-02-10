@@ -1,0 +1,49 @@
+@media screen {
+
+    /* Inputs */
+    input[type=text],
+    input[type=password] {
+        font-size: 0.8rem;
+        background-color: #ffffff;
+        color: var(--Palette4);
+        box-sizing: border-box;
+        padding: 10.5px 12.5px;
+        border: 1px solid #e0e0e0;
+        border-radius: 5px;
+        width: 270px;
+        height: 38px;
+    }
+
+    input[type=text]:active,
+    input[type=password]:active {
+        border: 1px solid var(--Palette3);
+    }
+
+    /* Buttons */
+    button {
+        background-color: var(--Palette4);
+        color: var(--Palette2);
+        padding: 11px 16px;
+        border: none;
+        font-size: 0.8rem;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+}
+
+@media (min-width: 992px) {
+    /* Scroll bar */
+    ::-webkit-scrollbar {
+        width: 0.5em;
+    }
+
+    ::-webkit-scrollbar-track {
+        background-color: #f3f3f3;
+        border-radius: 100vw;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: darkgrey;
+        border-radius: 100vw;
+    }
+}

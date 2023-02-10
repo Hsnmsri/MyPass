@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="MyPass.png"/>
+    <link rel="stylesheet" href="css/index.css">
+    <title>MyPass</title>
+</head>
+
+<body dir="ltr">
+
+    <div id="main-frame">
+
+        <header>
+
+            <div id="header-left-box">
+
+                <h1>MyPass</h1>
+
+            </div>
+
+            <div id="header-right-box">
+
+                <!-- Menu box -->
+                <div id="menu-container-box" style="display: none;">
+
+                    <div id="menu-background-box"></div>
+                    <div id="menu-box">
+
+                        <!-- Menu Main Button box -->
+                        <div id="menu-main-box">
+
+                            <!-- Items -->
+                            <div class="menu-button-item" onclick="SetLink(this,'loginhistory')">
+
+                                <span class="menu-button-text">Login history</span>
+
+                            </div>
+                            <hr>
+                            <div class="menu-button-item" onclick="SetLink(this,'setting')">
+
+                                <span class="menu-button-text">Setting</span>
+
+                            </div>
+
+                        </div>
+
+                        <div id="menu-cancel-box">
+
+                            <span id="cancel-button-text">Cancel</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" id="app-close-icon">
+                    <path
+                        d="M378.4 440.6c8.531 10.16 7.203 25.28-2.938 33.81C370.9 478.2 365.5 480 360 480c-6.844 0-13.64-2.906-18.39-8.562L192 293.3l-149.6 178.1C37.63 477.1 30.83 480 23.98 480c-5.453 0-10.92-1.844-15.42-5.625c-10.14-8.531-11.47-23.66-2.938-33.81L160.7 256L5.625 71.44C-2.906 61.28-1.578 46.16 8.563 37.63C18.69 29.08 33.84 30.39 42.38 40.56L192 218.7l149.6-178.1c8.547-10.17 23.67-11.47 33.81-2.938s11.47 23.66 2.938 33.81L223.3 256L378.4 440.6z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 512" id="app-menu-icon">
+                    <path
+                        d="M64 112c26.5 0 48-21.5 48-48S90.5 16 64 16S16 37.5 16 64S37.5 112 64 112zM64 400c-26.5 0-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48S90.5 400 64 400zM64 208C37.5 208 16 229.5 16 256S37.5 304 64 304s48-21.5 48-48S90.5 208 64 208z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="password-list-icon">
+                    <path
+                        d="M328.5 0C227.3 0 145 82.31 145 183.5c0 10.12 .9062 20.44 2.719 30.81l-132.2 132.2C5.5 356.5 0 369.8 0 384v89.5C0 494.7 17.28 512 38.5 512h87C146.7 512 164 494.7 164 473.5V454h19.5c21.22 0 38.5-17.28 38.5-38.5V396h28c10.28 0 19.94-4 27.22-11.28l20.47-20.44C411.9 384.3 512 294.8 512 183.5C512 82.31 429.7 0 328.5 0zM295.7 314.8L282.5 311.5L246.1 348H173.1v58H116V464H48V384c0-1.312 .5313-2.594 1.469-3.531l151-151L197.2 216.3C194.4 205.2 193 194.1 193 183.5C193 108.8 253.8 48 328.5 48S464 108.8 464 183.5C464 268.8 385.1 337.1 295.7 314.8zM368 111.1c-17.67 0-32 14.33-32 32c0 17.67 14.33 32 32 32s32-14.33 32-32C400 126.3 385.7 111.1 368 111.1z" />
+                </svg>
+
+            </div>
+
+        </header>
+
+        <!-- Main Frame -->
+        <main>
+
+            <div id="domain-name-input-box" class="input-main-box" style="display: none;">
+
+                <label for="domain-name-input" class="input-label">Domain</label>
+                <input type="text" id="domain-name-input" class="input-data">
+
+            </div>
+
+            <div id="username-input-box" class="input-main-box" style="display: none;">
+
+                <label for="username-input" class="input-label">Username</label>
+                <input type="text" id="username-input" class="input-data">
+
+            </div>
+
+            <div id="password-input-box" class="input-main-box">
+
+                <div>
+
+                    <label for="password-input" class="input-label">Password</label>
+                    <input type="text" id="password-input" class="input-data">
+
+                </div>
+
+                <div>
+
+                    <button id="copy-password-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" id="copy-password-icon">
+                            <path
+                                d="M429.3 93.38l-74.63-74.64C342.6 6.742 326.3 0 309.4 0H160C124.7 0 96 28.65 96 64l.0098 288c0 35.34 28.65 64 64 64h224C419.2 416 448 387.2 448 352V138.6C448 121.7 441.3 105.4 429.3 93.38zM400 352c0 8.836-7.164 16-16 16H160c-8.838 0-16-7.164-16-16L144 64.13c0-8.836 7.164-16 16-16h128V128c0 17.67 14.33 32 32 32h79.99V352zM328 512h-208C53.83 512 0 458.2 0 392v-272C0 106.8 10.75 96 24 96S48 106.8 48 120v272c0 39.7 32.3 72 72 72h208c13.25 0 24 10.75 24 24S341.3 512 328 512z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="copy-password-check-icon">
+                            <path
+                                d="M480.1 128.1l-272 272C204.3 405.7 198.2 408 192 408s-12.28-2.344-16.97-7.031l-144-144c-9.375-9.375-9.375-24.56 0-33.94s24.56-9.375 33.94 0L192 350.1l255-255c9.375-9.375 24.56-9.375 33.94 0S490.3 119.6 480.1 128.1z" />
+                        </svg>
+                    </button>
+                    <button id="generate-password-button">Generate</button>
+
+                </div>
+
+            </div>
+
+            <div id="button-box">
+
+                <button id="add-button">Add</button>
+                <button id="cancel-button" style="display: none;">Cancel</button>
+                <button id="save-pass-button" style="display: none;">Save Password</button>
+
+            </div>
+
+
+        </main>
+
+        <footer>
+
+            <span id="copyright-text">
+                All rights reserved by Mr. Mansouri
+            </span>
+
+            <span id="rule-text">
+                Privacy and Rules
+            </span>
+
+        </footer>
+
+        <!-- scripts -->
+        <script src="js/jquery-3.6.1.min.js"></script>
+        <script src="js/global.js"></script>
+        <script src="js/index.js"></script>
+
+    </div>
+
+</body>
+
+</html>
