@@ -32,24 +32,35 @@
     }
 
     /* Password input */
-    #generate-password-button {
+    #password-input-box>div:first-child {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #password-input-box>div:last-child {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-top: 28px;
+        width: 100%;
+    }
+
+    #generate-password-button,
+    #cancel-button {
         color: var(--Palette4);
         background-color: var(--Palette1);
-        align-self: flex-end;
-        margin-top: 28px;
+    }
+
+    #copy-password-button {
+        color: var(--Palette4);
+        background-color: var(--Palette1);
+        margin-right: 17px;
+        width: 46px;
+        height: 36px;
     }
 
     #add-button {
         width: 100%;
-    }
-
-    #save-pass-button {
-        margin-left: auto;
-    }
-
-    #cancel-button {
-        color: var(--Palette4);
-        background-color: var(--Palette1);
     }
 
 }
@@ -76,16 +87,29 @@
     /* Password input */
     #password-input-box {
         flex-direction: row;
-        flex-wrap: wrap;
         width: 100%;
+    }
+
+    #password-input-box>div:first-child {
+        display: flex;
+        flex-direction: column;
+        width: 208px;
+    }
+
+    #password-input-box>div:last-child {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-top: 0;
+        box-sizing: border-box;
+        padding-top: 16px;
+    }
+
+    #password-input {
+        width: 208px;
     }
 
     #password-input-box>label {
         width: 100%;
-    }
-
-    #generate-password-button {
-        align-self: center;
-        margin: 0 0 0 22.5px;
     }
 }
