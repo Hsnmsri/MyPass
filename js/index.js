@@ -28,3 +28,18 @@ $('#cancel-button').click(function () {
     $('#save-pass-button').hide();
     $('#add-button').show();
 });
+
+$('#copy-password-button').click(function () {
+    let passwordInput = document.getElementById('password-input');
+    passwordInput.select();
+    passwordInput.setSelectionRange(0, 99999);
+    navigator.clipboard.writeText(passwordInput.value);
+    let copyIcon = document.getElementById('copy-password-icon');
+    copyIcon.style.display = 'none'
+    let checkCopyIcon = document.getElementById('copy-password-check-icon');
+    checkCopyIcon.style.display = 'unset';
+    let timer = window.setTimeout(function () {
+        copyIcon.style.display = 'unset';
+        checkCopyIcon.style.display = 'none';
+    }, 760);
+});

@@ -59,6 +59,10 @@
         height: 36px;
     }
 
+    #copy-password-check-icon{
+        display: none;
+    }
+
     #add-button {
         width: 100%;
     }
