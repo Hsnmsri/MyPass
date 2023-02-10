@@ -28,6 +28,7 @@
     #button-box {
         display: flex;
         align-items: center;
+        justify-content: space-between;
         width: 271px;
     }
 
@@ -59,7 +60,7 @@
         height: 36px;
     }
 
-    #copy-password-check-icon{
+    #copy-password-check-icon {
         display: none;
     }
 
@@ -80,7 +81,7 @@
     }
 
     #button-box {
-        justify-content: flex-start;
+        justify-content: space-between;
         width: 100%;
     }
 
