@@ -19,7 +19,7 @@ $('#menu-cancel-box').click(function () {
 // #region Pages links
 // Page Links
 let host = window.location.host;
-let fileType = ".html";
+let fileType = "";
 function SetLink(element, filename) {
     element.addEventListener("click", function () {
         window.location.assign("http://" + host + "/" + filename + fileType);
