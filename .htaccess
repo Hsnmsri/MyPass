@@ -1,0 +1,27 @@
+Options All -Indexes
+RewriteEngine On
+RewriteBase /
+
+# Redirect 404
+#    ErrorDocument 404 /pages/errors/404.php
+
+# Redirect /@StoreId to store page
+#    RewriteRule ^@(.*)/$ /pages/store_profile/productlist.php?storeid=$1 [L,QSA,R=301]
+#    RewriteRule ^@(.*)$ /pages/store_profile/productlist.php?storeid=$1 [QSA,L]
+
+# Redirect store pages
+#    RewriteRule ^store/(.*)/@(.*)/$ /pages/store_profile/&1.php?storeid=$2 [L,QSA,R=302]
+#    RewriteRule ^store/(.*)/@(.*)$ /pages/store_profile/$1.php?storeid=$2 [QSA,L]
+
+# Redirect user pages
+#    RewriteRule ^user/(.*)/$ /pages/user_profile/&1.php [L,QSA,R=302]
+#    RewriteRule ^user/(.*)$ /pages/user_profile/$1.php [QSA,L]
+
+# Remove .php from main directory filenames
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^(([A-Za-z0-9\-]+/)*[A-Za-z0-9\-]+)?$ $1.php [L]
+
+ <IfModule mime_module>
+   AddHandler application/x-httpd-ea-php74 .php .php7 .phtml
+ </IfModule>
